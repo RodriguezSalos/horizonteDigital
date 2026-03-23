@@ -373,9 +373,9 @@ footer small { font-size:.7rem; color:rgba(255,255,255,.45); display:block; }
 }
 .cart-note {
   background:#f0f7f1; border:1px solid #c4ddc9;
-  border-radius:10px; padding:.7rem .9rem;
-  font-size:.75rem; color:#2e7d52; line-height:1.5;
-  margin-bottom:.85rem; display:flex; gap:.5rem;
+  border-radius:10px; padding:.85rem 1rem;
+  font-size:.78rem; color:#2e7d52; line-height:1.6;
+  margin-bottom:.85rem;
 }
 .cart-total {
   display:flex; justify-content:space-between; align-items:center;
