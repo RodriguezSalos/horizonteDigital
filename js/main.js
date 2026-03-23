@@ -110,7 +110,7 @@ function renderCart() {
   badge.classList.toggle('show', totalQty > 0);
 
   if (cart.length === 0) {
-    container.innerHTML = '<div class="cart-empty"><div class="empty-icon">🛒</div><p>Tu carrito está vacío</p></div>';
+    container.innerHTML = '<div class="cart-empty"><div class="empty-icon">🛒</div><div class="empty-title">Tu carrito está vacío</div><div class="empty-sub">Agrega productos desde el catálogo y arma tu pedido aquí.</div></div>';
     footer.style.display = 'none';
     return;
   }
