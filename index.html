@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizonte Digital | Monterrey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="brand-name">Horizonte<span class="dot">.</span>Digital</div>
+  <div class="brand-sub">Apodaca · Monterrey · Zona Metro</div>
+  <div class="live-badge"><span class="live-dot"></span>Entrega hoy mismo a domicilio</div>
+</header>
+
+<div class="hero">
+  <div class="hero-emoji">🛵</div>
+  <div>
+    <h2>Compra local, recibe hoy</h2>
+    <p>Sin esperar semanas desde China. Te llevamos el producto directo a tu puerta.</p>
+  </div>
+</div>
+
+<div class="label">Cobertura de entrega</div>
+<div class="zone">
+  <div class="zone-icon">📍</div>
+  <div>
+    <h4>Apodaca · Monterrey · San Nicolás · Escobedo</h4>
+    <p>Entregamos el mismo día en toda la zona metropolitana. Coordina por WhatsApp y recibe en horas.</p>
+  </div>
+</div>
+
+<div class="label">Productos disponibles</div>
+<div class="grid">
+
+  <!-- Panel Solar — más vendido -->
+  <div class="card featured">
+    <div class="ribbon">⭐ Más vendido</div>
+    <div class="carousel" id="carousel-ps" onclick="openZoom('ps', event)">
+      <div class="carousel-track" id="track-ps">
+        <img src="img/panel-solar/ps-9.png" alt="Lámpara Solar vista previa">
+        <img src="img/panel-solar/ps-1.png" alt="Lámpara Solar foto 1">
+        <img src="img/panel-solar/ps-2.png" alt="Lámpara Solar foto 2">
+        <img src="img/panel-solar/ps-3.png" alt="Lámpara Solar foto 3">
+        <img src="img/panel-solar/ps-4.png" alt="Lámpara Solar foto 4">
+        <img src="img/panel-solar/ps-5.png" alt="Lámpara Solar foto 5">
+        <img src="img/panel-solar/ps-6.png" alt="Lámpara Solar foto 6">
+        <img src="img/panel-solar/ps-7.png" alt="Lámpara Solar foto 7">
+        <img src="img/panel-solar/ps-8.png" alt="Lámpara Solar foto 8">
+      </div>
+      <button class="carousel-btn prev" onclick="slideCarousel('ps',-1,event)">&#8249;</button>
+      <button class="carousel-btn next" onclick="slideCarousel('ps', 1,event)">&#8250;</button>
+      <div class="carousel-dots" id="dots-ps"></div>
+    </div>
+    <div class="card-body">
+      <div class="card-cat">Iluminación solar</div>
+      <div class="card-title">Lámpara Solar 30W Luz Blanca Exterior</div>
+      <p class="card-intro">¿Cansado de pagar luz por iluminar el exterior? Olvídate de cables y electricistas. Esta lámpara funciona <strong>100% con energía solar.</strong></p>
+      <ul class="desc-bullets">
+        <li><span class="bull-icon">☀️</span><span class="bull-text"><strong>Carga con energía solar, sin costo de luz</strong>Panel independiente — apunta al sol, el reflector donde lo necesites.</span></li>
+        <li><span class="bull-icon">💡</span><span class="bull-text"><strong>Luz blanca fría 6500K de alta potencia</strong>30W LED iluminan patios, pasillos, jardines y entradas con claridad total.</span></li>
+        <li><span class="bull-icon">🌧️</span><span class="bull-text"><strong>Resistente a la lluvia y el polvo — IP67</strong>Funciona en cualquier clima, sin preocupaciones.</span></li>
+        <li><span class="bull-icon">📱</span><span class="bull-text"><strong>Control remoto para programar modos</strong>Enciéndelo, apágalo o programa horarios sin moverte.</span></li>
+        <li><span class="bull-icon">🔋</span><span class="bull-text"><strong>Hasta 12 horas de iluminación continua</strong>Carga en 4–6 horas de sol y dura toda la noche.</span></li>
+      </ul>
+      <div class="desc-section">
+        <div class="desc-section-title">🏠 Ideal para</div>
+        <div class="desc-section-body">Quintas · Ranchos · Jardines · Patios · Pasillos · Cocheras · Bodegas · Terrazas</div>
+      </div>
+      <div class="desc-section">
+        <div class="desc-section-title">📦 Contenido del paquete</div>
+        <div class="desc-section-body">1 reflector LED 30W + 1 panel solar + accesorios de instalación + control remoto</div>
+      </div>
+      <div class="desc-section">
+        <div class="desc-section-title">⚙️ Especificaciones</div>
+        <div class="tags">
+          <span class="tag">30W LED</span>
+          <span class="tag">Panel independiente</span>
+          <span class="tag">IP67</span>
+          <span class="tag">Sensor movimiento</span>
+          <span class="tag">Control remoto</span>
+          <span class="tag">12h batería</span>
+          <span class="tag">6500K luz blanca</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div><div class="price">$200</div><div class="price-note">Entrega a domicilio incluida</div></div>
+        <div class="stock">En stock</div>
+      </div>
+      <a class="btn-wa" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20la%20L%C3%A1mpara%20Solar%2030W%20en%20Horizonte%20Digital.%20%C2%BFSigue%20disponible%3F" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero este producto
+      </a>
+    </div>
+  </div>
+
+  <!-- Cepillo -->
+  <div class="card">
+    <div class="card-thumb">🧹</div>
+    <div class="card-body">
+      <div class="card-cat">Limpieza del hogar</div>
+      <div class="card-title">Cepillo Multiusos Mango Largo</div>
+      <div class="card-desc">Compacto y práctico para espacios reducidos. Con escurridor de goma integrado. Ideal para cocina, baño, patio y más.</div>
+      <div class="tags">
+        <span class="tag">120cm mango</span><span class="tag">Cabeza ABS</span>
+        <span class="tag">Escurridor goma</span><span class="tag">Multiusos</span>
+      </div>
+      <div class="price-row">
+        <div><div class="price">$150</div><div class="price-note">Entrega a domicilio incluida</div></div>
+        <div class="stock">En stock</div>
+      </div>
+      <a class="btn-wa" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20el%20Cepillo%20Multiusos%20en%20Horizonte%20Digital.%20%C2%BFSigue%20disponible%3F" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero este producto
+      </a>
+    </div>
+  </div>
+
+  <!-- Vaso -->
+  <div class="card">
+    <div class="card-thumb">🥣</div>
+    <div class="card-body">
+      <div class="card-cat">Cocina · Estilo de vida</div>
+      <div class="card-title">Vaso Portátil para Yogurt y Snacks</div>
+      <div class="card-desc">Contenedor compacto con compartimento para toppings y espacio lateral para cuchara. Perfecto para llevar al trabajo, gym o escuela.</div>
+      <div class="tags">
+        <span class="tag">Con cuchara</span><span class="tag">2 compartimentos</span>
+        <span class="tag">Portátil</span><span class="tag">Reutilizable</span>
+      </div>
+      <div class="price-row">
+        <div><div class="price">$120</div><div class="price-note">Entrega a domicilio incluida</div></div>
+        <div class="stock">En stock</div>
+      </div>
+      <a class="btn-wa" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20el%20Vaso%20para%20Yogurt%20en%20Horizonte%20Digital.%20%C2%BFSigue%20disponible%3F" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero este producto
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ZOOM MODAL -->
+<div class="zoom-overlay" id="zoom-overlay" onclick="closeZoom()">
+  <button class="zoom-close" onclick="closeZoom()">&#x2715;</button>
+  <button class="zoom-nav prev" onclick="zoomNav(-1,event)">&#8249;</button>
+  <img id="zoom-img" src="" alt="">
+  <button class="zoom-nav next" onclick="zoomNav(1,event)">&#8250;</button>
+</div>
+
+<footer>
+  <a class="footer-cta" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20el%20cat%C3%A1logo%20de%20Horizonte%20Digital%20y%20me%20interesa%20un%20producto." target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Escríbenos por WhatsApp
+  </a>
+  <small>Respondemos en minutos · Lunes a Sábado</small>
+  <div class="footer-brand">Horizonte<span>.</span>Digital &copy; 2025</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
