@@ -99,14 +99,40 @@
 
   <!-- Cepillo -->
   <div class="card">
-    <div class="card-thumb">🧹</div>
+    <div class="carousel contain" id="carousel-cb" onclick="openZoom('cb', event)">
+      <div class="carousel-track" id="track-cb">
+        <img src="img/cepillo/cb-1.jpg" alt="Cepillo vista previa">
+        <img src="img/cepillo/cb-2.jpg" alt="Cepillo foto 2">
+        <img src="img/cepillo/cb-3.jpg" alt="Cepillo foto 3">
+        <img src="img/cepillo/cb-4.jpg" alt="Cepillo foto 4">
+        <img src="img/cepillo/cb-5.jpg" alt="Cepillo foto 5">
+        <img src="img/cepillo/cb-6.png" alt="Cepillo foto 6">
+      </div>
+      <button class="carousel-btn prev" onclick="slideCarousel('cb',-1,event)">&#8249;</button>
+      <button class="carousel-btn next" onclick="slideCarousel('cb', 1,event)">&#8250;</button>
+      <div class="carousel-dots" id="dots-cb"></div>
+    </div>
     <div class="card-body">
       <div class="card-cat">Limpieza del hogar</div>
-      <div class="card-title">Cepillo Multiusos Mango Largo</div>
-      <div class="card-desc">Compacto y práctico para espacios reducidos. Con escurridor de goma integrado. Ideal para cocina, baño, patio y más.</div>
-      <div class="tags">
-        <span class="tag">120cm mango</span><span class="tag">Cabeza ABS</span>
-        <span class="tag">Escurridor goma</span><span class="tag">Multiusos</span>
+      <div class="card-title">Cepillo Multiusos Con Cerdas Firmes y Escurridor de Goma</div>
+      <ul class="desc-bullets">
+        <li><span class="bull-icon">📐</span><span class="bull-text"><strong>Tamaño compacto para espacios reducidos</strong>Entra donde los cepillos tradicionales no llegan.</span></li>
+        <li><span class="bull-icon">💪</span><span class="bull-text"><strong>Cerdas firmes de alto rendimiento</strong>Eliminan suciedad y residuos en múltiples superficies sin esfuerzo.</span></li>
+        <li><span class="bull-icon">🤝</span><span class="bull-text"><strong>Mango ergonómico</strong>Facilita el agarre y el control durante la limpieza.</span></li>
+        <li><span class="bull-icon">💧</span><span class="bull-text"><strong>Escurridor de goma integrado</strong>Limpia sin goteo y seca más rápido.</span></li>
+        <li><span class="bull-icon">📦</span><span class="bull-text"><strong>Fácil de almacenar</strong>Ocupa poco espacio en tu hogar, oficina o cochera.</span></li>
+        <li><span class="bull-icon">🔩</span><span class="bull-text"><strong>Fabricado en ABS resistente</strong>Uso duradero y de rendimiento constante.</span></li>
+        <li><span class="bull-icon">✨</span><span class="bull-text"><strong>Versátil</strong>Pisos, patios, cocinas, baños y cualquier superficie.</span></li>
+      </ul>
+      <div class="desc-section">
+        <div class="desc-section-title">⚙️ Especificaciones</div>
+        <div class="tags">
+          <span class="tag">Altura 120cm</span>
+          <span class="tag">Ancho 32cm</span>
+          <span class="tag">Material ABS</span>
+          <span class="tag">Escurridor goma</span>
+          <span class="tag">Multiusos</span>
+        </div>
       </div>
       <div class="price-row">
         <div><div class="price">$150</div><div class="price-note">Entrega a domicilio incluida</div></div>
@@ -121,20 +147,94 @@
 
   <!-- Vaso -->
   <div class="card">
-    <div class="card-thumb">🥣</div>
+    <div class="carousel contain" id="carousel-vaso" onclick="openZoom('vaso', event)">
+      <div class="carousel-track" id="track-vaso">
+        <img src="img/vaso/vaso-1.jpg" alt="Vaso vista previa">
+        <img src="img/vaso/vaso-2.jpg" alt="Vaso foto 2">
+        <img src="img/vaso/vaso-3.jpg" alt="Vaso foto 3">
+        <img src="img/vaso/vaso-4.jpg" alt="Vaso foto 4">
+        <img src="img/vaso/vaso-5.jpg" alt="Vaso foto 5">
+        <img src="img/vaso/vaso-6.jpg" alt="Vaso foto 6">
+      </div>
+      <button class="carousel-btn prev" onclick="slideCarousel('vaso',-1,event)">&#8249;</button>
+      <button class="carousel-btn next" onclick="slideCarousel('vaso', 1,event)">&#8250;</button>
+      <div class="carousel-dots" id="dots-vaso"></div>
+    </div>
     <div class="card-body">
       <div class="card-cat">Cocina · Estilo de vida</div>
-      <div class="card-title">Vaso Portátil para Yogurt y Snacks</div>
-      <div class="card-desc">Contenedor compacto con compartimento para toppings y espacio lateral para cuchara. Perfecto para llevar al trabajo, gym o escuela.</div>
-      <div class="tags">
-        <span class="tag">Con cuchara</span><span class="tag">2 compartimentos</span>
-        <span class="tag">Portátil</span><span class="tag">Reutilizable</span>
+      <div class="card-title">Vaso Portátil con Compartimento y Cubiertos</div>
+      <p class="card-intro">Práctico contenedor para yogurt, frutas o snacks — ideal para llevar alimentos de forma cómoda y organizada a donde vayas.</p>
+      <ul class="desc-bullets">
+        <li><span class="bull-icon">🥣</span><span class="bull-text"><strong>Contenedor ideal para yogurt y snacks</strong>Diseño compacto para llevar al trabajo, escuela, gym o viajes.</span></li>
+        <li><span class="bull-icon">🥄</span><span class="bull-text"><strong>Incluye cuchara con compartimento lateral</strong>Siempre lista, sin ocupar espacio extra.</span></li>
+        <li><span class="bull-icon">🍓</span><span class="bull-text"><strong>Compartimento superior para toppings</strong>Granola, cereal, frutas — todo separado hasta que quieras mezclarlo.</span></li>
+        <li><span class="bull-icon">🎒</span><span class="bull-text"><strong>Diseño portátil fácil de transportar</strong>Entra en mochila, bolsa o maletín sin problema.</span></li>
+        <li><span class="bull-icon">🧼</span><span class="bull-text"><strong>Fácil de limpiar y reutilizable</strong>Material plástico resistente apto para alimentos.</span></li>
+      </ul>
+      <div class="desc-section">
+        <div class="desc-section-title">⚙️ Especificaciones</div>
+        <div class="tags">
+          <span class="tag">Con cuchara</span>
+          <span class="tag">2 compartimentos</span>
+          <span class="tag">Portátil</span>
+          <span class="tag">Reutilizable</span>
+          <span class="tag">Gris / Transparente</span>
+          <span class="tag">Plástico apto alimentos</span>
+        </div>
       </div>
       <div class="price-row">
         <div><div class="price">$120</div><div class="price-note">Entrega a domicilio incluida</div></div>
         <div class="stock">En stock</div>
       </div>
-      <a class="btn-wa" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20el%20Vaso%20para%20Yogurt%20en%20Horizonte%20Digital.%20%C2%BFSigue%20disponible%3F" target="_blank">
+      <a class="btn-wa" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20el%20Vaso%20Port%C3%A1til%20en%20Horizonte%20Digital.%20%C2%BFSigue%20disponible%3F" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero este producto
+      </a>
+    </div>
+  </div>
+
+  <!-- Bowl -->
+  <div class="card">
+    <div class="carousel contain" id="carousel-bowl" onclick="openZoom('bowl', event)">
+      <div class="carousel-track" id="track-bowl">
+        <img src="img/bowl/bowl-1.jpg" alt="Bowl vista previa">
+        <img src="img/bowl/bowl-2.jpg" alt="Bowl foto 2">
+        <img src="img/bowl/bowl-3.jpg" alt="Bowl foto 3">
+        <img src="img/bowl/bowl-4.jpg" alt="Bowl foto 4">
+        <img src="img/bowl/bowl-5.jpg" alt="Bowl foto 5">
+        <img src="img/bowl/bowl-6.jpg" alt="Bowl foto 6">
+        <img src="img/bowl/bowl-7.jpg" alt="Bowl foto 7">
+      </div>
+      <button class="carousel-btn prev" onclick="slideCarousel('bowl',-1,event)">&#8249;</button>
+      <button class="carousel-btn next" onclick="slideCarousel('bowl', 1,event)">&#8250;</button>
+      <div class="carousel-dots" id="dots-bowl"></div>
+    </div>
+    <div class="card-body">
+      <div class="card-cat">Cocina · Utensilios</div>
+      <div class="card-title">Bowl Multifuncional 3 en 1 — Tazón, Escurridor y Rallador</div>
+      <p class="card-intro">Set de cocina elaborado en acero inoxidable. Lava, escurre y ralla en un solo producto sin ensuciar más trastes.</p>
+      <ul class="desc-bullets">
+        <li><span class="bull-icon">🥗</span><span class="bull-text"><strong>Set 3 en 1 completo</strong>Tazón profundo + colador perforado + tapa ralladora multifuncional.</span></li>
+        <li><span class="bull-icon">🔩</span><span class="bull-text"><strong>Acero inoxidable resistente</strong>Material de alta calidad, duradero y fácil de limpiar.</span></li>
+        <li><span class="bull-icon">🥕</span><span class="bull-text"><strong>Rallador con diferentes tipos de corte</strong>Zanahoria, queso, frutas y más — directo al recipiente.</span></li>
+        <li><span class="bull-icon">💧</span><span class="bull-text"><strong>Colador con perforaciones eficientes</strong>Escurre pasta, lava frutas y verduras sin esfuerzo.</span></li>
+        <li><span class="bull-icon">🏠</span><span class="bull-text"><strong>Diseño apilable y fácil de almacenar</strong>Ocupa menos espacio en tu cocina.</span></li>
+      </ul>
+      <div class="desc-section">
+        <div class="desc-section-title">⚙️ Especificaciones</div>
+        <div class="tags">
+          <span class="tag">3 en 1</span>
+          <span class="tag">Acero inoxidable</span>
+          <span class="tag">Colador incluido</span>
+          <span class="tag">Rallador integrado</span>
+          <span class="tag">Apilable</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div><div class="price">$150</div><div class="price-note">Entrega a domicilio incluida</div></div>
+        <div class="stock">En stock</div>
+      </div>
+      <a class="btn-wa" href="https://wa.me/521TUNUMERO?text=Hola!%20Vi%20el%20Bowl%203%20en%201%20en%20Horizonte%20Digital.%20%C2%BFSigue%20disponible%3F" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Quiero este producto
       </a>

@@ -73,4 +73,10 @@ document.addEventListener('keydown', e => {
 document.addEventListener('DOMContentLoaded', () => {
   initCarousel('ps', 9);
   enableSwipe('ps');
+  initCarousel('cb', 6);
+  enableSwipe('cb');
+  initCarousel('vaso', 6);
+  enableSwipe('vaso');
+  initCarousel('bowl', 7);
+  enableSwipe('bowl');
 });
