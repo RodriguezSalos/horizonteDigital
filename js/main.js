@@ -69,6 +69,92 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')   zoomNav(-1, e);
 });
 
+// ── Carrito ──────────────────────────────────────────────────
+let cart = [];
+
+function addToCart(id, name, price, img) {
+  const existing = cart.find(i => i.id === id);
+  if (existing) {
+    existing.qty++;
+  } else {
+    cart.push({ id, name, price, img, qty: 1 });
+  }
+  renderCart();
+  openCart();
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(i => i.id !== id);
+  renderCart();
+}
+
+function updateQty(id, delta) {
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) removeFromCart(id);
+  else renderCart();
+}
+
+function renderCart() {
+  const container = document.getElementById('cart-items');
+  const footer    = document.getElementById('cart-footer');
+  const badge     = document.getElementById('cart-badge');
+  const totalEl   = document.getElementById('cart-total-price');
+
+  const totalQty  = cart.reduce((s, i) => s + i.qty, 0);
+  const totalPrice = cart.reduce((s, i) => s + i.price * i.qty, 0);
+
+  // Badge
+  badge.textContent = totalQty;
+  badge.classList.toggle('show', totalQty > 0);
+
+  if (cart.length === 0) {
+    container.innerHTML = '<div class="cart-empty"><div class="empty-icon">🛒</div><p>Tu carrito está vacío</p></div>';
+    footer.style.display = 'none';
+    return;
+  }
+
+  footer.style.display = 'block';
+  totalEl.textContent = '$' + totalPrice;
+
+  container.innerHTML = cart.map(item => `
+    <div class="cart-item">
+      <img class="cart-item-img" src="${item.img}" alt="${item.name}">
+      <div class="cart-item-info">
+        <div class="cart-item-name">${item.name}</div>
+        <div class="cart-item-price">$${item.price} c/u</div>
+        <div class="cart-item-qty">
+          <button class="qty-btn" onclick="updateQty('${item.id}',-1)">−</button>
+          <span class="qty-num">${item.qty}</span>
+          <button class="qty-btn" onclick="updateQty('${item.id}',1)">+</button>
+        </div>
+      </div>
+      <button class="cart-item-remove" onclick="removeFromCart('${item.id}')">🗑</button>
+    </div>
+  `).join('');
+}
+
+function openCart() {
+  document.getElementById('cart-overlay').classList.add('open');
+  document.getElementById('cart-drawer').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCart() {
+  document.getElementById('cart-overlay').classList.remove('open');
+  document.getElementById('cart-drawer').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function checkout() {
+  if (cart.length === 0) return;
+  const lines = cart.map(i => `• ${i.name} x${i.qty} — $${i.price * i.qty}`).join('%0A');
+  const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  const msg = `Hola!%20Quiero%20hacer%20un%20pedido%3A%0A%0A${lines}%0A%0ATotal%3A%20%24${total}%0A%0A%C2%BFPueden%20coordinar%20la%20entrega%3F`;
+  window.open(`https://wa.me/5218119810775?text=${msg}`, '_blank');
+}
+
 // ── Init ─────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initCarousel('ps', 9);
